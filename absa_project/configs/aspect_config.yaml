@@ -1,0 +1,207 @@
+# configs/aspect_config.yaml
+# Her ürün kategorisi için aspect listesi ve anahtar kelimeler
+
+product_categories:
+  - id: pantolon_jean
+    name_tr: "Pantolon / Jean"
+    name_en: "Pants / Jeans"
+    keywords_tr: ["pantolon", "jean", "kot", "tayt", "şort", "kapri"]
+    keywords_en: ["pants", "jeans", "denim", "trousers", "shorts", "leggings"]
+    aspects:
+      - id: beden_uyumu
+        name_tr: "Beden Uyumu"
+        name_en: "Size Fit"
+        keywords_tr: ["beden", "ölçü", "dar", "bol", "küçük", "büyük", "dar geldi", "bol geldi"]
+        keywords_en: ["size", "fit", "small", "large", "tight", "loose", "runs small", "runs large"]
+        sentiment_direction: negative_keywords_trigger  # "dar geldi" → negatif
+      - id: uzunluk
+        name_tr: "Uzunluk"
+        name_en: "Length"
+        keywords_tr: ["uzunluk", "kısa", "uzun", "boyuma göre", "kısaltma"]
+        keywords_en: ["length", "short", "long", "tall", "hem"]
+      - id: kalip
+        name_tr: "Kalıp"
+        name_en: "Cut / Silhouette"
+        keywords_tr: ["kalıp", "dar bacak", "geniş paça", "boru paça", "mom fit", "slim"]
+        keywords_en: ["cut", "slim", "straight", "wide leg", "bootcut", "skinny"]
+      - id: kumas_kalitesi
+        name_tr: "Kumaş Kalitesi"
+        name_en: "Fabric Quality"
+        keywords_tr: ["kumaş", "kalite", "ince", "kalın", "yumuşak", "sert", "solma"]
+        keywords_en: ["fabric", "quality", "material", "thin", "thick", "soft", "rigid", "fading"]
+      - id: terzi_gerekliligi
+        name_tr: "Terzi Gereksinimi"
+        name_en: "Tailoring Need"
+        keywords_tr: ["terziye", "kısalttım", "kısaltma", "düzelttim"]
+        keywords_en: ["tailored", "hemmed", "altered", "tailor"]
+
+  - id: mont_kaban
+    name_tr: "Mont / Kaban"
+    name_en: "Coat / Jacket"
+    keywords_tr: ["mont", "kaban", "parka", "palto", "yelek", "anorak", "ceket"]
+    keywords_en: ["coat", "jacket", "parka", "puffer", "anorak", "vest", "blazer"]
+    aspects:
+      - id: kalinlik
+        name_tr: "Kalınlık"
+        name_en: "Thickness"
+        keywords_tr: ["kalın", "ince", "dolgu", "şişme", "astarlı"]
+        keywords_en: ["thick", "thin", "padded", "puffer", "lined", "insulated"]
+      - id: sicaklik_korumasi
+        name_tr: "Sıcaklık Koruması"
+        name_en: "Warmth"
+        keywords_tr: ["sıcak", "soğuk", "üşüdüm", "ısıtıyor", "sıcak tutmuyor", "derece"]
+        keywords_en: ["warm", "cold", "freezing", "insulation", "temperature", "cozy"]
+      - id: su_gecirmezlik
+        name_tr: "Su Geçirmezlik"
+        name_en: "Water Resistance"
+        keywords_tr: ["su geçiriyor", "ıslandı", "yağmurda", "su tutmuyor", "su geçirmez"]
+        keywords_en: ["waterproof", "water resistant", "wet", "rain", "soaked"]
+      - id: ic_dolgu
+        name_tr: "İç Dolgu"
+        name_en: "Inner Fill"
+        keywords_tr: ["dolgu", "tüy", "pamuk", "polyester", "içi boş"]
+        keywords_en: ["fill", "down", "feather", "synthetic", "hollow"]
+      - id: ruzgar_gecirmezlik
+        name_tr: "Rüzgar Geçirmezlik"
+        name_en: "Wind Resistance"
+        keywords_tr: ["rüzgar", "hava", "rüzgar geçiriyor", "rüzgar geçirmez"]
+        keywords_en: ["wind", "windproof", "draft", "breeze"]
+
+  - id: elbise_etek
+    name_tr: "Elbise / Etek"
+    name_en: "Dress / Skirt"
+    keywords_tr: ["elbise", "etek", "abiye", "midi", "maxi", "mini", "kombinezon"]
+    keywords_en: ["dress", "skirt", "gown", "midi", "maxi", "mini", "slip"]
+    aspects:
+      - id: boy_uyumu
+        name_tr: "Boy Uyumu"
+        name_en: "Length / Height Fit"
+        keywords_tr: ["boy", "uzun", "kısa", "boyuma göre", "diz altı", "diz üstü"]
+        keywords_en: ["length", "height", "knee", "midi", "floor length"]
+      - id: kumas_kalitesi
+        name_tr: "Kumaş Kalitesi"
+        name_en: "Fabric Quality"
+        keywords_tr: ["kumaş", "kalite", "döküm", "saten", "şifon", "astarlı"]
+        keywords_en: ["fabric", "material", "quality", "satin", "chiffon", "lined"]
+      - id: seffaflik
+        name_tr: "Şeffaflık"
+        name_en: "Transparency"
+        keywords_tr: ["şeffaf", "astarlı", "iç gözüküyor", "transparan", "astarı yok"]
+        keywords_en: ["see-through", "transparent", "sheer", "lined", "opaque"]
+      - id: kalip
+        name_tr: "Kalıp"
+        name_en: "Cut"
+        keywords_tr: ["kalıp", "dar", "bol", "vücudu sarıyor", "A kesim", "ince bel"]
+        keywords_en: ["cut", "fit", "flared", "A-line", "bodycon", "wrap"]
+
+  - id: tisort_gomlek_bluz
+    name_tr: "Tişört / Gömlek / Bluz"
+    name_en: "T-Shirt / Shirt / Blouse"
+    keywords_tr: ["tişört", "gömlek", "bluz", "sweatshirt", "kazak", "hoodie", "triko"]
+    keywords_en: ["t-shirt", "shirt", "blouse", "sweatshirt", "sweater", "hoodie", "knit"]
+    aspects:
+      - id: kumas_kalitesi
+        name_tr: "Kumaş Kalitesi"
+        name_en: "Fabric Quality"
+        keywords_tr: ["kumaş", "pamuk", "polyester", "solma", "yıkama", "kalite", "ince", "kalın"]
+        keywords_en: ["fabric", "cotton", "quality", "fading", "washing", "thin", "thick"]
+      - id: seffaflik
+        name_tr: "Şeffaflık"
+        name_en: "Transparency"
+        keywords_tr: ["şeffaf", "iç gözüküyor", "transparan"]
+        keywords_en: ["see-through", "transparent", "sheer"]
+      - id: dikis_kalitesi
+        name_tr: "Dikiş Kalitesi"
+        name_en: "Stitching Quality"
+        keywords_tr: ["dikiş", "söküldü", "iplik", "kalitesiz dikiş"]
+        keywords_en: ["stitching", "seam", "thread", "unraveled", "loose thread"]
+
+  - id: ayakkabi
+    name_tr: "Ayakkabı"
+    name_en: "Shoes"
+    keywords_tr: ["ayakkabı", "spor ayakkabı", "sneaker", "topuklu", "bot", "loafer", "oxford"]
+    keywords_en: ["shoes", "sneakers", "heels", "boots", "loafers", "oxford", "trainers"]
+    aspects:
+      - id: numara_uyumu
+        name_tr: "Numara Uyumu"
+        name_en: "Size Fit"
+        keywords_tr: ["numara", "dar", "bol", "büyük aldım", "küçük geldi", "tam oldu"]
+        keywords_en: ["size", "narrow", "wide", "runs small", "runs large", "true to size"]
+      - id: rahatlik
+        name_tr: "Rahatlık"
+        name_en: "Comfort"
+        keywords_tr: ["rahat", "ayak yoruyor", "uzun süre", "konforlu", "ağrı"]
+        keywords_en: ["comfortable", "comfort", "pain", "fatigue", "cushion", "support"]
+      - id: ayak_vurma
+        name_tr: "Ayak Vurma"
+        name_en: "Blisters / Rubbing"
+        keywords_tr: ["vurdu", "yara açtı", "kabarcık", "sürtme", "topuk yarası"]
+        keywords_en: ["blisters", "rubbing", "chafing", "sores", "heel pain"]
+      - id: deformasyon
+        name_tr: "Deformasyon"
+        name_en: "Deformation"
+        keywords_tr: ["bozuldu", "deforme", "şeklini kaybetti", "çürüdü", "eskidi"]
+        keywords_en: ["deformed", "worn out", "shape loss", "deteriorated", "fell apart"]
+
+  - id: terlik_sandalet_cizme
+    name_tr: "Terlik / Sandalet / Çizme"
+    name_en: "Slippers / Sandals / Boots"
+    keywords_tr: ["terlik", "sandalet", "çizme", "bot", "platform", "flip flop"]
+    keywords_en: ["slippers", "sandals", "boots", "platform", "flip flops", "mules"]
+    aspects:
+      - id: rahatlik
+        name_tr: "Rahatlık"
+        name_en: "Comfort"
+        keywords_tr: ["rahat", "konforlu", "ayak yoruyor", "uzun süre"]
+        keywords_en: ["comfortable", "comfort", "support", "cushion", "arch support"]
+      - id: numara_uyumu
+        name_tr: "Numara Uyumu"
+        name_en: "Size Fit"
+        keywords_tr: ["numara", "dar", "bol", "büyük", "küçük"]
+        keywords_en: ["size", "narrow", "wide", "small", "large"]
+      - id: malzeme_kalitesi
+        name_tr: "Malzeme Kalitesi"
+        name_en: "Material Quality"
+        keywords_tr: ["malzeme", "deri", "plastik", "kalite", "dayanıklı"]
+        keywords_en: ["material", "leather", "plastic", "quality", "durable"]
+      - id: taban_kaymazligi
+        name_tr: "Taban Kaymazlığı"
+        name_en: "Sole Grip"
+        keywords_tr: ["taban", "kaydı", "kayıyor", "tutunmuyor", "anti-slip"]
+        keywords_en: ["sole", "slip", "grip", "non-slip", "traction"]
+
+  - id: canta
+    name_tr: "Çanta"
+    name_en: "Bag"
+    keywords_tr: ["çanta", "sırt çantası", "omuz çantası", "cüzdan", "clutch", "tote"]
+    keywords_en: ["bag", "backpack", "shoulder bag", "wallet", "clutch", "tote", "handbag"]
+    aspects:
+      - id: malzeme_kalitesi
+        name_tr: "Malzeme Kalitesi"
+        name_en: "Material Quality"
+        keywords_tr: ["malzeme", "deri", "kumaş", "su geçiriyor", "kalite", "dayanıklı"]
+        keywords_en: ["material", "leather", "fabric", "quality", "durable", "vegan leather"]
+      - id: fermuar_toka
+        name_tr: "Fermuar / Toka Kalitesi"
+        name_en: "Zipper / Buckle Quality"
+        keywords_tr: ["fermuar", "toka", "bozuldu", "takılıyor", "açılıyor"]
+        keywords_en: ["zipper", "buckle", "clasp", "broken", "stuck", "opens"]
+      - id: kapasite
+        name_tr: "Kapasite"
+        name_en: "Capacity"
+        keywords_tr: ["küçük", "büyük", "sığmıyor", "geniş", "bölme", "cepte"]
+        keywords_en: ["small", "large", "fits", "capacity", "compartment", "spacious"]
+      - id: tasima_rahatligi
+        name_tr: "Taşıma Rahatlığı"
+        name_en: "Carrying Comfort"
+        keywords_tr: ["ağır", "hafif", "sap", "kayış", "omzumu ağrıttı"]
+        keywords_en: ["heavy", "light", "strap", "handle", "comfortable", "shoulder pain"]
+
+# Sentiment lexicon additions (domain-specific)
+domain_sentiment_lexicon:
+  turkish:
+    positive: ["kaliteli", "güzel", "harika", "mükemmel", "şık", "rahat", "sağlam", "tam beden", "beğendim", "tavsiye"]
+    negative: ["kalitesiz", "dar geldi", "büyük geldi", "ince", "şeffaf", "vurdu", "bozuldu", "hayal kırıklığı", "iade", "pişman"]
+  english:
+    positive: ["quality", "great", "perfect", "comfortable", "fits well", "true to size", "recommend", "love it"]
+    negative: ["poor quality", "runs small", "runs large", "see-through", "blisters", "broke", "disappointed", "returned"]
